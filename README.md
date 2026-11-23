@@ -1,5 +1,7 @@
 # 🚀 Corporate Task Management System (Manageko CRM)
 
+> 📖 **Comprehensive Project & Tech Guide**: Check out [GUIDE_AND_NOTES.md](file:///d:/crm/GUIDE_AND_NOTES.md) for full tech stack breakdown, database schema, RBAC policies, and usage instructions in Hindi & English.
+
 A clean, modern SaaS task management application designed for corporate product and engineering teams. Built with **Laravel 11**, **MySQL**, **Spatie Laravel Permission**, **React + Inertia.js (Laravel Breeze starter kit)**, and **Tailwind CSS**.
 
 ---
