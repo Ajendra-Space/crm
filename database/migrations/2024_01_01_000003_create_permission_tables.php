@@ -18,12 +18,12 @@ return new class extends Migration
             'model_has_roles' => 'model_has_roles',
             'role_has_permissions' => 'role_has_permissions',
         ]);
-        $columnNames = config('permission.column_names', [
-            'role_pivot_key' => 'role_id',
-            'permission_pivot_key' => 'permission_id',
-            'model_morph_key' => 'model_id',
-            'team_foreign_key' => 'team_id',
-        ]);
+        $columnNames = [
+            'role_pivot_key' => config('permission.column_names.role_pivot_key') ?: 'role_id',
+            'permission_pivot_key' => config('permission.column_names.permission_pivot_key') ?: 'permission_id',
+            'model_morph_key' => config('permission.column_names.model_morph_key') ?: 'model_id',
+            'team_foreign_key' => config('permission.column_names.team_foreign_key') ?: 'team_id',
+        ];
 
         Schema::create($tableNames['permissions'], function (Blueprint $table) {
             $table->bigIncrements('id');
